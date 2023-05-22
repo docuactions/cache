@@ -1,4 +1,4 @@
-# docusaurus-cache
+# Docusaurus Cache
 
 This action allows caching [Docusaurus](https://docusaurus.io) for faster application rebuilds.
 
