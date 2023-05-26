@@ -2,9 +2,8 @@
 
 This action allows caching [Docusaurus](https://docusaurus.io) for faster application rebuilds.
 
-[![LICENSE](https://img.shields.io/github/license/jongwooo/docusaurus-cache?color=blue)](LICENSE)
-[![CodeFactor](https://www.codefactor.io/repository/github/jongwooo/docusaurus-cache/badge)](https://www.codefactor.io/repository/github/jongwooo/docusaurus-cache)
-[![GitHub stars](https://img.shields.io/github/stars/jongwooo/docusaurus-cache?style=social)](https://github.com/jongwooo/docusaurus-cache)
+[![LICENSE](https://img.shields.io/github/license/docuactions/cache?color=blue)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/docuactions/cache?style=social)](https://github.com/docuactions/cache)
 
 ## Usage
 
@@ -29,7 +28,7 @@ This action currently caches the following directories:
   with:
    node-version: 18
 
-- uses: jongwooo/docusaurus-cache@v1
+- uses: docuactions/cache@v1
 
 - name: Install dependencies
   run: npm ci

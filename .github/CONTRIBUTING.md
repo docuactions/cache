@@ -9,7 +9,7 @@ This repository managed based on forked pull request strategy.
 ```sh
 # Fork this repository to yours.
 $ git clone [YOUR_REPOSITORY_URL]
-$ cd docusaurus-cache
+$ cd cache
 
 # (Working...)
 
@@ -17,15 +17,15 @@ $ git commit [...]
 $ git push origin [YOUR_REPOSITORY]
 
 # Enroll pull-request!
-# in https://github.com/jongwooo/docusaurus-cache
+# in https://github.com/docuactions/cache
 ```
 
 ## Commit message rules
 
-Each commit message consists of a **header**, a **body** and a **footer**. 
+Each commit message consists of a **header**, a **body** and a **footer**.
 The header has a special format that includes a **type**, a **scope** and a **subject**:
 
-```
+```text
 <type>(<scope>): <subject>
 <BLANK LINE>
 <body>
@@ -55,19 +55,16 @@ Must be one of the following:
 
 ### Scope
 
-The scope could be anything specifying place of the commit change. 
+The scope could be anything specifying place of the commit change.
 For example `deps-dev`, `workflows`, etc...
 
 ### Subject
 
-The first part of the commit message begins with an infinitive, and the first letter is capitalized. 
-It starts with commands such as `Fix`, `Add` and `Change` instead of past tense such as `Fixed`, `Added` 
+The first part of the commit message begins with an infinitive, and the first letter is capitalized.
+It starts with commands such as `Fix`, `Add` and `Change` instead of past tense such as `Fixed`, `Added`
 and `Changed`. In addition, It does not exceed 72 characters and does not end with a period (.).
 
--   `Fixed` -> `Fix`
--   `Added` -> `Add`
--   `Changed` -> `Change`
+- `Fixed` -> `Fix`
+- `Added` -> `Add`
+- `Changed` -> `Change`
 
-## Thanks!
-
-> I'm waiting for your pull request. :pray:
