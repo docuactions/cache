@@ -1,6 +1,6 @@
 name: "Docusaurus Cache"
 description: "Cache Docusaurus for faster application rebuilds."
-author: "jongwooo <jongwooo.han@gmail.com>"
+author: "docuactions"
 
 runs:
   using: "composite"
