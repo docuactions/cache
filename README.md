@@ -28,14 +28,24 @@ This action currently caches the following directories:
   with:
    node-version: 18
 
-- uses: docuactions/cache@v1
+- name: Cache ~/.npm for npm ci
+  uses: actions/cache@v4
+  with:
+   path: ~/.npm
+   key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+   restore-keys: ${{ runner.os }}-node
 
 - name: Install dependencies
   run: npm ci
 
+- uses: docuactions/cache@v1
+
 - name: Build
   run: npm run build
 ```
+
+> [!CAUTION]
+> You have to run this action _before_ `npm ci` because `npm ci` removes `node_modules` first. If you don't, this action will lose its effect.
 
 ## Contributing
 
