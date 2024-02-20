@@ -45,7 +45,7 @@ This action currently caches the following directories:
 ```
 
 > [!CAUTION]
-> You have to run this action _before_ `npm ci` because `npm ci` removes `node_modules` first. If you don't, this action will lose its effect.
+> You have to run this action _after_ `npm ci` like the above example because `npm ci` removes `node_modules` first. If you don't, this action will lose its effect.
 
 ## Contributing
 
